@@ -1,0 +1,301 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 6: Исходный файл unordered_set.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 6<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">unordered_set.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="unordered__set_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#ifndef UNORDERED_SET_H_</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#define UNORDERED_SET_H_</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span><span class="preprocessor">#include &lt;algorithm&gt;</span></div>
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span><span class="preprocessor">#include &lt;cstddef&gt;</span></div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span> </div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="};">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="classUnorderedSet.html">   13</a></span><span class="keyword">class </span><a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> <span class="keyword">public</span>:</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a2e7fdfb99ab4681b5e02dbe0dbe246a4">   16</a></span>  <a class="code hl_function" href="classUnorderedSet.html#a2e7fdfb99ab4681b5e02dbe0dbe246a4">UnorderedSet</a>() : <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>(nullptr), <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>(0), <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a>(0) {}</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  </div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a92181b67e0d6e91b35daa8147dbfae7a">   19</a></span>  <a class="code hl_function" href="classUnorderedSet.html#a92181b67e0d6e91b35daa8147dbfae7a">~UnorderedSet</a>() { <span class="keyword">delete</span>[] <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>; }</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  </div>
+<div class="foldopen" id="foldopen00023" data-start="{" data-end="}">
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#ad624a35d366302017062e8bdb3b2ec9a">   23</a></span>  <a class="code hl_function" href="classUnorderedSet.html#ad624a35d366302017062e8bdb3b2ec9a">UnorderedSet</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; other) </div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>      : <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>(nullptr), <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>(0), <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a>(0) {</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>    <a class="code hl_function" href="classUnorderedSet.html#a4e4dc33abfdfb8a610b3db6e251391e6">EnsureCapacity</a>(other.<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; other.<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; ++i) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>      <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i] = other.<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i];</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>    }</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a> = other.<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  }</div>
+</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  </div>
+<div class="foldopen" id="foldopen00035" data-start="{" data-end="}">
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a1ca0d03e8b880d5867a3e24a3dc8fa44">   35</a></span>  <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; <a class="code hl_function" href="classUnorderedSet.html#a1ca0d03e8b880d5867a3e24a3dc8fa44">operator=</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; other) {</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>      <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> temp(other);</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>      <a class="code hl_function" href="classUnorderedSet.html#a4bb985f5ad956c883f3138448314408e">Swap</a>(temp);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    }</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  </div>
+<div class="foldopen" id="foldopen00045" data-start="{" data-end="}">
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a1bfbc66b30740a9122d0a24dad8ed9a5">   45</a></span>  <a class="code hl_function" href="classUnorderedSet.html#a1bfbc66b30740a9122d0a24dad8ed9a5">UnorderedSet</a>(<a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp;&amp; other) noexcept</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>      : <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>(other.data_), <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>(other.size_), <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a>(other.capacity_) {</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    other.data_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    other.size_ = 0;</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    other.capacity_ = 0;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  }</div>
+</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  </div>
+<div class="foldopen" id="foldopen00055" data-start="{" data-end="}">
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a23c56e9ff17ae7a89d9567a8b76011db">   55</a></span>  <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; <a class="code hl_function" href="classUnorderedSet.html#a23c56e9ff17ae7a89d9567a8b76011db">operator=</a>(<a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp;&amp; other) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <span class="keywordflow">if</span> (<span class="keyword">this</span> != &amp;other) {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      <span class="keyword">delete</span>[] <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>      <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a> = other.<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>      <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a> = other.size_;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a> = other.capacity_;</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>      other.data_ = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>      other.size_ = 0;</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>      other.capacity_ = 0;</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    <span class="keywordflow">return</span> *<span class="keyword">this</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
+</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  </div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a01bdce6722d00f07293cca41df2c6572">   70</a></span>  std::size_t <a class="code hl_function" href="classUnorderedSet.html#a01bdce6722d00f07293cca41df2c6572">Size</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; }</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  </div>
+<div class="foldopen" id="foldopen00075" data-start="{" data-end="}">
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a99e66ab2e0c768cd3723e5478e03e0ae">   75</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classUnorderedSet.html#a99e66ab2e0c768cd3723e5478e03e0ae">Contains</a>(<span class="keyword">const</span> T&amp; value)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="classUnorderedSet.html#a98f0b0545c9f3b117bb7ad945fb0d389">Find</a>(value) != <a class="code hl_variable" href="classUnorderedSet.html#ab2c476247d65e21e660620f21916d83c">kNotFound</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  }</div>
+</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  </div>
+<div class="foldopen" id="foldopen00082" data-start="{" data-end="}">
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a182bb55db2b81b18e21644ad94d3946f">   82</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classUnorderedSet.html#a182bb55db2b81b18e21644ad94d3946f">Add</a>(<span class="keyword">const</span> T&amp; value) {</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="classUnorderedSet.html#a99e66ab2e0c768cd3723e5478e03e0ae">Contains</a>(value)) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    <a class="code hl_function" href="classUnorderedSet.html#a4e4dc33abfdfb8a610b3db6e251391e6">EnsureCapacity</a>(<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a> + 1);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>++] = value;</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  }</div>
+</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  </div>
+<div class="foldopen" id="foldopen00091" data-start="{" data-end="}">
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a2d53efbe43876a54009b62a6b65a999e">   91</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classUnorderedSet.html#a2d53efbe43876a54009b62a6b65a999e">Remove</a>(<span class="keyword">const</span> T&amp; value) {</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    std::size_t index = <a class="code hl_function" href="classUnorderedSet.html#a98f0b0545c9f3b117bb7ad945fb0d389">Find</a>(value);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>    <span class="keywordflow">if</span> (index == <a class="code hl_variable" href="classUnorderedSet.html#ab2c476247d65e21e660620f21916d83c">kNotFound</a>) <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    <span class="comment">// Сдвигаем элементы для сохранения порядка (без swap)</span></div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <span class="keywordflow">for</span> (std::size_t i = index; i + 1 &lt; <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; ++i) {</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>      <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i] = <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i + 1];</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    }</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    --<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>;</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>    <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  }</div>
+</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  </div>
+<div class="foldopen" id="foldopen00106" data-start="{" data-end="}">
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#ad397470755ad09ab2ed2c8b72136c6e7">  106</a></span>  <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> <a class="code hl_function" href="classUnorderedSet.html#ad397470755ad09ab2ed2c8b72136c6e7">Union</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> result(*<span class="keyword">this</span>);</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; other.<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; ++i) {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>      result.<a class="code hl_function" href="classUnorderedSet.html#a182bb55db2b81b18e21644ad94d3946f">Add</a>(other.<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i]);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>    }</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a696780d315f92037865925099019d155">  117</a></span>  <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> <a class="code hl_function" href="classUnorderedSet.html#a696780d315f92037865925099019d155">Except</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> result;</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; ++i) {</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      <span class="keywordflow">if</span> (!other.<a class="code hl_function" href="classUnorderedSet.html#a99e66ab2e0c768cd3723e5478e03e0ae">Contains</a>(<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i])) {</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        result.<a class="code hl_function" href="classUnorderedSet.html#a182bb55db2b81b18e21644ad94d3946f">Add</a>(<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i]);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      }</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    }</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>  }</div>
+</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  </div>
+<div class="foldopen" id="foldopen00130" data-start="{" data-end="}">
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a9a8a80cd912dce1c40db1508a47cc2f9">  130</a></span>  <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> <a class="code hl_function" href="classUnorderedSet.html#a9a8a80cd912dce1c40db1508a47cc2f9">Intersect</a>(<span class="keyword">const</span> <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; other)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>    <a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a> result;</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; ++i) {</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      <span class="keywordflow">if</span> (other.<a class="code hl_function" href="classUnorderedSet.html#a99e66ab2e0c768cd3723e5478e03e0ae">Contains</a>(<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i])) {</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        result.<a class="code hl_function" href="classUnorderedSet.html#a182bb55db2b81b18e21644ad94d3946f">Add</a>(<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i]);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>      }</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    }</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>  }</div>
+</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>  </div>
+<div class="foldopen" id="foldopen00142" data-start="{" data-end="}">
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a5c63fff3c9debf6a2a8bcf86d5d4dd6d">  142</a></span>  std::vector&lt;T&gt; <a class="code hl_function" href="classUnorderedSet.html#a5c63fff3c9debf6a2a8bcf86d5d4dd6d">ToVector</a>()<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>    <span class="keywordflow">return</span> std::vector&lt;T&gt;(<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>, <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a> + <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>);</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>  }</div>
+</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>  </div>
+<div class="foldopen" id="foldopen00147" data-start="{" data-end="}">
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a37d1a5203e856c1fc812b4f2603b0ad5">  147</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classUnorderedSet.html#a37d1a5203e856c1fc812b4f2603b0ad5">Clear</a>() {</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>    <span class="keyword">delete</span>[] <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>;</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>    <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a> = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>    <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a> = 0;</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>    <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a> = 0;</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>  }</div>
+</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>  </div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a4320b1b2a062a8c295bf786f522d8627">  156</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classUnorderedSet.html#a4320b1b2a062a8c295bf786f522d8627">IsEmpty</a>()<span class="keyword"> const </span>{ <span class="keywordflow">return</span> <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a> == 0; }</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno">  158</span> <span class="keyword">private</span>:</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#ab2c476247d65e21e660620f21916d83c">  159</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> std::size_t <a class="code hl_variable" href="classUnorderedSet.html#ab2c476247d65e21e660620f21916d83c">kNotFound</a> = <span class="keyword">static_cast&lt;</span>std::size_t<span class="keyword">&gt;</span>(-1);</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#af8e01fe8f94af46ee789e065daefe984">  160</a></span>  <span class="keyword">static</span> <span class="keyword">constexpr</span> std::size_t <a class="code hl_variable" href="classUnorderedSet.html#af8e01fe8f94af46ee789e065daefe984">kInitialCapacity</a> = 4;</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span>  </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">  162</a></span>  T* <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">  163</a></span>  std::size_t <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">  164</a></span>  std::size_t <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno">  165</span>  </div>
+<div class="foldopen" id="foldopen00168" data-start="{" data-end="}">
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a4bb985f5ad956c883f3138448314408e">  168</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classUnorderedSet.html#a4bb985f5ad956c883f3138448314408e">Swap</a>(<a class="code hl_class" href="classUnorderedSet.html">UnorderedSet</a>&amp; other) <span class="keyword">noexcept</span> {</div>
+<div class="line"><a id="l00169" name="l00169"></a><span class="lineno">  169</span>    std::swap(<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>, other.data_);</div>
+<div class="line"><a id="l00170" name="l00170"></a><span class="lineno">  170</span>    std::swap(<a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>, other.size_);</div>
+<div class="line"><a id="l00171" name="l00171"></a><span class="lineno">  171</span>    std::swap(<a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a>, other.capacity_);</div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span>  }</div>
+</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span>  </div>
+<div class="foldopen" id="foldopen00177" data-start="{" data-end="}">
+<div class="line"><a id="l00177" name="l00177"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a98f0b0545c9f3b117bb7ad945fb0d389">  177</a></span>  std::size_t <a class="code hl_function" href="classUnorderedSet.html#a98f0b0545c9f3b117bb7ad945fb0d389">Find</a>(<span class="keyword">const</span> T&amp; value)<span class="keyword"> const </span>{</div>
+<div class="line"><a id="l00178" name="l00178"></a><span class="lineno">  178</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; ++i) {</div>
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno">  179</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i] == value) {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>        <span class="keywordflow">return</span> i;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>      }</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>    }</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span>    <span class="keywordflow">return</span> <a class="code hl_variable" href="classUnorderedSet.html#ab2c476247d65e21e660620f21916d83c">kNotFound</a>;</div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span>  }</div>
+</div>
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno">  185</span>  </div>
+<div class="foldopen" id="foldopen00188" data-start="{" data-end="}">
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno"><a class="line" href="classUnorderedSet.html#a4e4dc33abfdfb8a610b3db6e251391e6">  188</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classUnorderedSet.html#a4e4dc33abfdfb8a610b3db6e251391e6">EnsureCapacity</a>(std::size_t min_capacity) {</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a> &gt;= min_capacity) <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span>    </div>
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno">  191</span>    std::size_t new_capacity = <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a> == 0 ? <a class="code hl_variable" href="classUnorderedSet.html#af8e01fe8f94af46ee789e065daefe984">kInitialCapacity</a> : <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a> * 2;</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    <span class="keywordflow">while</span> (new_capacity &lt; min_capacity) new_capacity *= 2;</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    </div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>    T* new_data = <span class="keyword">new</span> T[new_capacity];</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span>    <span class="keywordflow">for</span> (std::size_t i = 0; i &lt; <a class="code hl_variable" href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">size_</a>; ++i) {</div>
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno">  196</span>      new_data[i] = <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>[i];</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    }</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>    </div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span>    <span class="keyword">delete</span>[] <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a>;</div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno">  200</span>    <a class="code hl_variable" href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">data_</a> = new_data;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno">  201</span>    <a class="code hl_variable" href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">capacity_</a> = new_capacity;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno">  202</span>  }</div>
+</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>};</div>
+</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="line"><a id="l00205" name="l00205"></a><span class="lineno">  205</span><span class="preprocessor">#endif  </span><span class="comment">// UNORDERED_SET_H_</span></div>
+<div class="ttc" id="aclassUnorderedSet_html"><div class="ttname"><a href="classUnorderedSet.html">UnorderedSet</a></div><div class="ttdoc">Класс, реализующий функционал неупорядоченного списка с уникальными элементами.</div><div class="ttdef"><b>Definition</b> unordered_set.h:13</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a01bdce6722d00f07293cca41df2c6572"><div class="ttname"><a href="classUnorderedSet.html#a01bdce6722d00f07293cca41df2c6572">UnorderedSet::Size</a></div><div class="ttdeci">std::size_t Size() const</div><div class="ttdoc">Возвращает количество элементов в множестве.</div><div class="ttdef"><b>Definition</b> unordered_set.h:70</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a0ede5ba7b64bba580f914ea9e20bec8f"><div class="ttname"><a href="classUnorderedSet.html#a0ede5ba7b64bba580f914ea9e20bec8f">UnorderedSet::data_</a></div><div class="ttdeci">T * data_</div><div class="ttdef"><b>Definition</b> unordered_set.h:162</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a182bb55db2b81b18e21644ad94d3946f"><div class="ttname"><a href="classUnorderedSet.html#a182bb55db2b81b18e21644ad94d3946f">UnorderedSet::Add</a></div><div class="ttdeci">void Add(const T &amp;value)</div><div class="ttdoc">Добавляет элемент в множество.</div><div class="ttdef"><b>Definition</b> unordered_set.h:82</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a1bfbc66b30740a9122d0a24dad8ed9a5"><div class="ttname"><a href="classUnorderedSet.html#a1bfbc66b30740a9122d0a24dad8ed9a5">UnorderedSet::UnorderedSet</a></div><div class="ttdeci">UnorderedSet(UnorderedSet &amp;&amp;other) noexcept</div><div class="ttdoc">Перемещающий конструктор.</div><div class="ttdef"><b>Definition</b> unordered_set.h:45</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a1ca0d03e8b880d5867a3e24a3dc8fa44"><div class="ttname"><a href="classUnorderedSet.html#a1ca0d03e8b880d5867a3e24a3dc8fa44">UnorderedSet::operator=</a></div><div class="ttdeci">UnorderedSet &amp; operator=(const UnorderedSet &amp;other)</div><div class="ttdoc">Оператор присваивания копированием.</div><div class="ttdef"><b>Definition</b> unordered_set.h:35</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a23c56e9ff17ae7a89d9567a8b76011db"><div class="ttname"><a href="classUnorderedSet.html#a23c56e9ff17ae7a89d9567a8b76011db">UnorderedSet::operator=</a></div><div class="ttdeci">UnorderedSet &amp; operator=(UnorderedSet &amp;&amp;other) noexcept</div><div class="ttdoc">Оператор присваивания перемещением.</div><div class="ttdef"><b>Definition</b> unordered_set.h:55</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a2d53efbe43876a54009b62a6b65a999e"><div class="ttname"><a href="classUnorderedSet.html#a2d53efbe43876a54009b62a6b65a999e">UnorderedSet::Remove</a></div><div class="ttdeci">bool Remove(const T &amp;value)</div><div class="ttdoc">Удаляет элемент из множества.</div><div class="ttdef"><b>Definition</b> unordered_set.h:91</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a2e7fdfb99ab4681b5e02dbe0dbe246a4"><div class="ttname"><a href="classUnorderedSet.html#a2e7fdfb99ab4681b5e02dbe0dbe246a4">UnorderedSet::UnorderedSet</a></div><div class="ttdeci">UnorderedSet()</div><div class="ttdoc">Конструктор по умолчанию. Создает пустое множество.</div><div class="ttdef"><b>Definition</b> unordered_set.h:16</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a37d1a5203e856c1fc812b4f2603b0ad5"><div class="ttname"><a href="classUnorderedSet.html#a37d1a5203e856c1fc812b4f2603b0ad5">UnorderedSet::Clear</a></div><div class="ttdeci">void Clear()</div><div class="ttdoc">Очищает множество, удаляя все элементы.</div><div class="ttdef"><b>Definition</b> unordered_set.h:147</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a4320b1b2a062a8c295bf786f522d8627"><div class="ttname"><a href="classUnorderedSet.html#a4320b1b2a062a8c295bf786f522d8627">UnorderedSet::IsEmpty</a></div><div class="ttdeci">bool IsEmpty() const</div><div class="ttdoc">Проверяет, пусто ли множество.</div><div class="ttdef"><b>Definition</b> unordered_set.h:156</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a43a98f9f9bcfc67387c1152bb816ae79"><div class="ttname"><a href="classUnorderedSet.html#a43a98f9f9bcfc67387c1152bb816ae79">UnorderedSet::size_</a></div><div class="ttdeci">std::size_t size_</div><div class="ttdef"><b>Definition</b> unordered_set.h:163</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a47393a243627c5ec7076cc4287596ad8"><div class="ttname"><a href="classUnorderedSet.html#a47393a243627c5ec7076cc4287596ad8">UnorderedSet::capacity_</a></div><div class="ttdeci">std::size_t capacity_</div><div class="ttdef"><b>Definition</b> unordered_set.h:164</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a4bb985f5ad956c883f3138448314408e"><div class="ttname"><a href="classUnorderedSet.html#a4bb985f5ad956c883f3138448314408e">UnorderedSet::Swap</a></div><div class="ttdeci">void Swap(UnorderedSet &amp;other) noexcept</div><div class="ttdoc">Обменивает содержимое текущего объекта с другим.</div><div class="ttdef"><b>Definition</b> unordered_set.h:168</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a4e4dc33abfdfb8a610b3db6e251391e6"><div class="ttname"><a href="classUnorderedSet.html#a4e4dc33abfdfb8a610b3db6e251391e6">UnorderedSet::EnsureCapacity</a></div><div class="ttdeci">void EnsureCapacity(std::size_t min_capacity)</div><div class="ttdoc">Обеспечивает минимальную емкость массива.</div><div class="ttdef"><b>Definition</b> unordered_set.h:188</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a5c63fff3c9debf6a2a8bcf86d5d4dd6d"><div class="ttname"><a href="classUnorderedSet.html#a5c63fff3c9debf6a2a8bcf86d5d4dd6d">UnorderedSet::ToVector</a></div><div class="ttdeci">std::vector&lt; T &gt; ToVector() const</div><div class="ttdoc">Преобразует множество в вектор для удобства вывода.</div><div class="ttdef"><b>Definition</b> unordered_set.h:142</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a696780d315f92037865925099019d155"><div class="ttname"><a href="classUnorderedSet.html#a696780d315f92037865925099019d155">UnorderedSet::Except</a></div><div class="ttdeci">UnorderedSet Except(const UnorderedSet &amp;other) const</div><div class="ttdoc">Удаляет из текущего множества элементы, присутствующие в другом множестве.</div><div class="ttdef"><b>Definition</b> unordered_set.h:117</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a92181b67e0d6e91b35daa8147dbfae7a"><div class="ttname"><a href="classUnorderedSet.html#a92181b67e0d6e91b35daa8147dbfae7a">UnorderedSet::~UnorderedSet</a></div><div class="ttdeci">~UnorderedSet()</div><div class="ttdoc">Деструктор. Освобождает выделенную память.</div><div class="ttdef"><b>Definition</b> unordered_set.h:19</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a98f0b0545c9f3b117bb7ad945fb0d389"><div class="ttname"><a href="classUnorderedSet.html#a98f0b0545c9f3b117bb7ad945fb0d389">UnorderedSet::Find</a></div><div class="ttdeci">std::size_t Find(const T &amp;value) const</div><div class="ttdoc">Находит индекс элемента в массиве.</div><div class="ttdef"><b>Definition</b> unordered_set.h:177</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a99e66ab2e0c768cd3723e5478e03e0ae"><div class="ttname"><a href="classUnorderedSet.html#a99e66ab2e0c768cd3723e5478e03e0ae">UnorderedSet::Contains</a></div><div class="ttdeci">bool Contains(const T &amp;value) const</div><div class="ttdoc">Проверяет наличие элемента в множестве.</div><div class="ttdef"><b>Definition</b> unordered_set.h:75</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_a9a8a80cd912dce1c40db1508a47cc2f9"><div class="ttname"><a href="classUnorderedSet.html#a9a8a80cd912dce1c40db1508a47cc2f9">UnorderedSet::Intersect</a></div><div class="ttdeci">UnorderedSet Intersect(const UnorderedSet &amp;other) const</div><div class="ttdoc">Находит пересечение текущего множества с другим.</div><div class="ttdef"><b>Definition</b> unordered_set.h:130</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_ab2c476247d65e21e660620f21916d83c"><div class="ttname"><a href="classUnorderedSet.html#ab2c476247d65e21e660620f21916d83c">UnorderedSet::kNotFound</a></div><div class="ttdeci">static constexpr std::size_t kNotFound</div><div class="ttdef"><b>Definition</b> unordered_set.h:159</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_ad397470755ad09ab2ed2c8b72136c6e7"><div class="ttname"><a href="classUnorderedSet.html#ad397470755ad09ab2ed2c8b72136c6e7">UnorderedSet::Union</a></div><div class="ttdeci">UnorderedSet Union(const UnorderedSet &amp;other) const</div><div class="ttdoc">Объединяет текущее множество с другим.</div><div class="ttdef"><b>Definition</b> unordered_set.h:106</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_ad624a35d366302017062e8bdb3b2ec9a"><div class="ttname"><a href="classUnorderedSet.html#ad624a35d366302017062e8bdb3b2ec9a">UnorderedSet::UnorderedSet</a></div><div class="ttdeci">UnorderedSet(const UnorderedSet &amp;other)</div><div class="ttdoc">Копирующий конструктор.</div><div class="ttdef"><b>Definition</b> unordered_set.h:23</div></div>
+<div class="ttc" id="aclassUnorderedSet_html_af8e01fe8f94af46ee789e065daefe984"><div class="ttname"><a href="classUnorderedSet.html#af8e01fe8f94af46ee789e065daefe984">UnorderedSet::kInitialCapacity</a></div><div class="ttdeci">static constexpr std::size_t kInitialCapacity</div><div class="ttdef"><b>Definition</b> unordered_set.h:160</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

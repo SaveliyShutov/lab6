@@ -1,0 +1,504 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 6: Класс BookAnalyzer</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 6<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="classBookAnalyzer-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Класс BookAnalyzer</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Класс для анализа прочитанных книг читателями.  
+ <a href="classBookAnalyzer.html#details">Подробнее...</a></p>
+<div class="dynheader">
+Граф связей класса BookAnalyzer:</div>
+<div class="dyncontent">
+<div class="center"><img src="classBookAnalyzer__coll__graph.png" border="0" usemap="#aBookAnalyzer_coll__map" alt="Collaboration graph"/></div>
+<map name="aBookAnalyzer_coll__map" id="aBookAnalyzer_coll__map">
+<area shape="rect" title="Класс для анализа прочитанных книг читателями." alt="" coords="13,605,144,771"/>
+<area shape="rect" href="classUnorderedSet.html" title=" " alt="" coords="5,5,152,425"/>
+<area shape="poly" title=" " alt="" coords="81,426,81,589,76,589,76,426"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a061677fe028aeb54eaa89232b474108a" id="r_a061677fe028aeb54eaa89232b474108a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a061677fe028aeb54eaa89232b474108a">ReadData</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a061677fe028aeb54eaa89232b474108a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Читает данные из файла и заполняет внутренние структуры.  <br /></td></tr>
+<tr class="separator:a061677fe028aeb54eaa89232b474108a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35f42956b24320dd9730d0b17d9f9a60" id="r_a35f42956b24320dd9730d0b17d9f9a60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a35f42956b24320dd9730d0b17d9f9a60">Analyze</a> ()</td></tr>
+<tr class="memdesc:a35f42956b24320dd9730d0b17d9f9a60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выполняет анализ прочитанных книг.  <br /></td></tr>
+<tr class="separator:a35f42956b24320dd9730d0b17d9f9a60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a311a602dfb4237a4aae305e1cbf519e2" id="r_a311a602dfb4237a4aae305e1cbf519e2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a311a602dfb4237a4aae305e1cbf519e2">PrintResults</a> () const</td></tr>
+<tr class="memdesc:a311a602dfb4237a4aae305e1cbf519e2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит результаты анализа в консоль.  <br /></td></tr>
+<tr class="separator:a311a602dfb4237a4aae305e1cbf519e2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e75161688f37870a35bd0d3a47f3c75" id="r_a3e75161688f37870a35bd0d3a47f3c75"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a3e75161688f37870a35bd0d3a47f3c75">SaveResults</a> (const std::string &amp;filename) const</td></tr>
+<tr class="memdesc:a3e75161688f37870a35bd0d3a47f3c75"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет результаты анализа в файл.  <br /></td></tr>
+<tr class="separator:a3e75161688f37870a35bd0d3a47f3c75"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:a2fa4bf64890ae374dd9f27c073a88e46" id="r_a2fa4bf64890ae374dd9f27c073a88e46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a2fa4bf64890ae374dd9f27c073a88e46">PrintSet</a> (const std::string &amp;title, const <a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt; &amp;set) const</td></tr>
+<tr class="memdesc:a2fa4bf64890ae374dd9f27c073a88e46"><td class="mdescLeft">&#160;</td><td class="mdescRight">Выводит множество книг с заголовком в консоль.  <br /></td></tr>
+<tr class="separator:a2fa4bf64890ae374dd9f27c073a88e46"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae184e1f3c6b4ba212eb2f10dabe939a6" id="r_ae184e1f3c6b4ba212eb2f10dabe939a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#ae184e1f3c6b4ba212eb2f10dabe939a6">SaveSetToFile</a> (std::ofstream &amp;file, const std::string &amp;title, const <a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt; &amp;set) const</td></tr>
+<tr class="memdesc:ae184e1f3c6b4ba212eb2f10dabe939a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Сохраняет множество книг с заголовком в файл.  <br /></td></tr>
+<tr class="separator:ae184e1f3c6b4ba212eb2f10dabe939a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a8aa148f07c116994f28837b65fb4ca0c" id="r_a8aa148f07c116994f28837b65fb4ca0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a8aa148f07c116994f28837b65fb4ca0c">all_books_</a></td></tr>
+<tr class="separator:a8aa148f07c116994f28837b65fb4ca0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad2f7d36b5fc4919bec3bf83ab18cb127" id="r_ad2f7d36b5fc4919bec3bf83ab18cb127"><td class="memItemLeft" align="right" valign="top">std::vector&lt; <a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#ad2f7d36b5fc4919bec3bf83ab18cb127">readers_books_</a></td></tr>
+<tr class="separator:ad2f7d36b5fc4919bec3bf83ab18cb127"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43ce678ce85b340721960427cda803ad" id="r_a43ce678ce85b340721960427cda803ad"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a43ce678ce85b340721960427cda803ad">books_read_by_all_</a></td></tr>
+<tr class="separator:a43ce678ce85b340721960427cda803ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96cc99f8459934eba5db62961c4bcd9f" id="r_a96cc99f8459934eba5db62961c4bcd9f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#a96cc99f8459934eba5db62961c4bcd9f">books_read_by_some_</a></td></tr>
+<tr class="separator:a96cc99f8459934eba5db62961c4bcd9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9144fa379c86def47be0506261f406b" id="r_ab9144fa379c86def47be0506261f406b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#ab9144fa379c86def47be0506261f406b">books_read_by_none_</a></td></tr>
+<tr class="separator:ab9144fa379c86def47be0506261f406b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa04a2191f65c0202abbad1108e23b99a" id="r_aa04a2191f65c0202abbad1108e23b99a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classBookAnalyzer.html#aa04a2191f65c0202abbad1108e23b99a">books_read_by_someone_</a></td></tr>
+<tr class="separator:aa04a2191f65c0202abbad1108e23b99a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p>Класс для анализа прочитанных книг читателями. </p>
+<p>Использует класс <a class="el" href="classUnorderedSet.html" title="Класс, реализующий функционал неупорядоченного списка с уникальными элементами.">UnorderedSet</a> для хранения книг и выполнения операций над множествами. Определяет три категории книг: прочитанные всеми, прочитанные некоторыми, не прочитанные никем. </p>
+</div><h2 class="groupheader">Методы</h2>
+<a id="a35f42956b24320dd9730d0b17d9f9a60" name="a35f42956b24320dd9730d0b17d9f9a60"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35f42956b24320dd9730d0b17d9f9a60">&#9670;&#160;</a></span>Analyze()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BookAnalyzer::Analyze </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выполняет анализ прочитанных книг. </p>
+<p>Определяет три категории книг:</p><ol type="1">
+<li>Книги, прочитанные всеми читателями</li>
+<li>Книги, прочитанные некоторыми читателями (но не всеми)</li>
+<li>Книги, которые никто не прочитал </li>
+</ol>
+
+</div>
+</div>
+<a id="a311a602dfb4237a4aae305e1cbf519e2" name="a311a602dfb4237a4aae305e1cbf519e2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a311a602dfb4237a4aae305e1cbf519e2">&#9670;&#160;</a></span>PrintResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BookAnalyzer::PrintResults </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выводит результаты анализа в консоль. </p>
+
+</div>
+</div>
+<a id="a2fa4bf64890ae374dd9f27c073a88e46" name="a2fa4bf64890ae374dd9f27c073a88e46"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2fa4bf64890ae374dd9f27c073a88e46">&#9670;&#160;</a></span>PrintSet()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BookAnalyzer::PrintSet </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Выводит множество книг с заголовком в консоль. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">title</td><td>Заголовок для вывода.</td></tr>
+    <tr><td class="paramname">set</td><td>Множество книг для вывода.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a061677fe028aeb54eaa89232b474108a" name="a061677fe028aeb54eaa89232b474108a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a061677fe028aeb54eaa89232b474108a">&#9670;&#160;</a></span>ReadData()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BookAnalyzer::ReadData </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Читает данные из файла и заполняет внутренние структуры. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Имя файла с данными.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true, если данные успешно прочитаны, иначе false.</dd></dl>
+
+</div>
+</div>
+<a id="a3e75161688f37870a35bd0d3a47f3c75" name="a3e75161688f37870a35bd0d3a47f3c75"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e75161688f37870a35bd0d3a47f3c75">&#9670;&#160;</a></span>SaveResults()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BookAnalyzer::SaveResults </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сохраняет результаты анализа в файл. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>Имя файла для сохранения результатов.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae184e1f3c6b4ba212eb2f10dabe939a6" name="ae184e1f3c6b4ba212eb2f10dabe939a6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae184e1f3c6b4ba212eb2f10dabe939a6">&#9670;&#160;</a></span>SaveSetToFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BookAnalyzer::SaveSetToFile </td>
+          <td>(</td>
+          <td class="paramtype">std::ofstream &amp;&#160;</td>
+          <td class="paramname"><em>file</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>title</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const <a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt; std::string &gt; &amp;&#160;</td>
+          <td class="paramname"><em>set</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Сохраняет множество книг с заголовком в файл. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file</td><td>Файловый поток для записи.</td></tr>
+    <tr><td class="paramname">title</td><td>Заголовок для сохранения.</td></tr>
+    <tr><td class="paramname">set</td><td>Множество книг для сохранения.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="a8aa148f07c116994f28837b65fb4ca0c" name="a8aa148f07c116994f28837b65fb4ca0c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8aa148f07c116994f28837b65fb4ca0c">&#9670;&#160;</a></span>all_books_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt;std::string&gt; BookAnalyzer::all_books_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a43ce678ce85b340721960427cda803ad" name="a43ce678ce85b340721960427cda803ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43ce678ce85b340721960427cda803ad">&#9670;&#160;</a></span>books_read_by_all_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt;std::string&gt; BookAnalyzer::books_read_by_all_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ab9144fa379c86def47be0506261f406b" name="ab9144fa379c86def47be0506261f406b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9144fa379c86def47be0506261f406b">&#9670;&#160;</a></span>books_read_by_none_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt;std::string&gt; BookAnalyzer::books_read_by_none_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a96cc99f8459934eba5db62961c4bcd9f" name="a96cc99f8459934eba5db62961c4bcd9f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96cc99f8459934eba5db62961c4bcd9f">&#9670;&#160;</a></span>books_read_by_some_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt;std::string&gt; BookAnalyzer::books_read_by_some_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa04a2191f65c0202abbad1108e23b99a" name="aa04a2191f65c0202abbad1108e23b99a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa04a2191f65c0202abbad1108e23b99a">&#9670;&#160;</a></span>books_read_by_someone_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt;std::string&gt; BookAnalyzer::books_read_by_someone_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ad2f7d36b5fc4919bec3bf83ab18cb127" name="ad2f7d36b5fc4919bec3bf83ab18cb127"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad2f7d36b5fc4919bec3bf83ab18cb127">&#9670;&#160;</a></span>readers_books_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::vector&lt;<a class="el" href="classUnorderedSet.html">UnorderedSet</a>&lt;std::string&gt; &gt; BookAnalyzer::readers_books_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="main_8cpp.html">main.cpp</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>

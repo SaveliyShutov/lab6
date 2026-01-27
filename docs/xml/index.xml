@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.8" xml:lang="ru">
+  <compound refid="classBookAnalyzer" kind="class"><name>BookAnalyzer</name>
+    <member refid="classBookAnalyzer_1a8aa148f07c116994f28837b65fb4ca0c" kind="variable"><name>all_books_</name></member>
+    <member refid="classBookAnalyzer_1ad2f7d36b5fc4919bec3bf83ab18cb127" kind="variable"><name>readers_books_</name></member>
+    <member refid="classBookAnalyzer_1a43ce678ce85b340721960427cda803ad" kind="variable"><name>books_read_by_all_</name></member>
+    <member refid="classBookAnalyzer_1a96cc99f8459934eba5db62961c4bcd9f" kind="variable"><name>books_read_by_some_</name></member>
+    <member refid="classBookAnalyzer_1ab9144fa379c86def47be0506261f406b" kind="variable"><name>books_read_by_none_</name></member>
+    <member refid="classBookAnalyzer_1aa04a2191f65c0202abbad1108e23b99a" kind="variable"><name>books_read_by_someone_</name></member>
+    <member refid="classBookAnalyzer_1a061677fe028aeb54eaa89232b474108a" kind="function"><name>ReadData</name></member>
+    <member refid="classBookAnalyzer_1a35f42956b24320dd9730d0b17d9f9a60" kind="function"><name>Analyze</name></member>
+    <member refid="classBookAnalyzer_1a311a602dfb4237a4aae305e1cbf519e2" kind="function"><name>PrintResults</name></member>
+    <member refid="classBookAnalyzer_1a3e75161688f37870a35bd0d3a47f3c75" kind="function"><name>SaveResults</name></member>
+    <member refid="classBookAnalyzer_1a2fa4bf64890ae374dd9f27c073a88e46" kind="function"><name>PrintSet</name></member>
+    <member refid="classBookAnalyzer_1ae184e1f3c6b4ba212eb2f10dabe939a6" kind="function"><name>SaveSetToFile</name></member>
+  </compound>
+  <compound refid="classDictionary" kind="class"><name>Dictionary</name>
+    <member refid="classDictionary_1a4b3f065d07be6bd799ea00258961d404" kind="variable"><name>keys_</name></member>
+    <member refid="classDictionary_1ae0c7d29c0e002618e976540758858a68" kind="variable"><name>values_</name></member>
+    <member refid="classDictionary_1aa345778676eea9c7396fe7ff4e8ff46e" kind="variable"><name>size_</name></member>
+    <member refid="classDictionary_1aa711d9ed53af69797061af762c0137fa" kind="variable"><name>capacity_</name></member>
+    <member refid="classDictionary_1a8d898eaf938d38607a22640680c48f63" kind="variable"><name>npos</name></member>
+    <member refid="classDictionary_1a69b86204e013879414d768fee07206ee" kind="function"><name>Dictionary</name></member>
+    <member refid="classDictionary_1aefb78992f7f87b1cf339323654462db8" kind="function"><name>Dictionary</name></member>
+    <member refid="classDictionary_1ade2208755a19e1d9b0e7241bbdb8ddae" kind="function"><name>operator=</name></member>
+    <member refid="classDictionary_1a73ddcf3c474f4f4580303bcec9ef346b" kind="function"><name>Dictionary</name></member>
+    <member refid="classDictionary_1abbcb4212033c76125b4b3be72c6f69d8" kind="function"><name>operator=</name></member>
+    <member refid="classDictionary_1ae37de949fa5cbedd34f21e604fa1edd9" kind="function"><name>~Dictionary</name></member>
+    <member refid="classDictionary_1aef779cc0f66b75006e0cbdececaeebd9" kind="function"><name>ContainsKey</name></member>
+    <member refid="classDictionary_1abdd0c6a75e4ebc504e9c0f4a32ef64eb" kind="function"><name>Add</name></member>
+    <member refid="classDictionary_1a322b7a960dd11c61c2c267bc80fcebd7" kind="function"><name>Remove</name></member>
+    <member refid="classDictionary_1ab166730797e564bdcbd6f7534c869fbe" kind="function"><name>Get</name></member>
+    <member refid="classDictionary_1afd34dc5f74f3985ced04fb9e1c26b5ed" kind="function"><name>Size</name></member>
+    <member refid="classDictionary_1ad261e546de1766b5d4bb0f02b1c8fde1" kind="function"><name>EnsureCapacity</name></member>
+    <member refid="classDictionary_1a085bbe16b6ee74bcd69de5ba3fd615cc" kind="function"><name>IndexOf</name></member>
+  </compound>
+  <compound refid="classUnorderedSet" kind="class"><name>UnorderedSet</name>
+    <member refid="classUnorderedSet_1ab2c476247d65e21e660620f21916d83c" kind="variable"><name>kNotFound</name></member>
+    <member refid="classUnorderedSet_1af8e01fe8f94af46ee789e065daefe984" kind="variable"><name>kInitialCapacity</name></member>
+    <member refid="classUnorderedSet_1a0ede5ba7b64bba580f914ea9e20bec8f" kind="variable"><name>data_</name></member>
+    <member refid="classUnorderedSet_1a43a98f9f9bcfc67387c1152bb816ae79" kind="variable"><name>size_</name></member>
+    <member refid="classUnorderedSet_1a47393a243627c5ec7076cc4287596ad8" kind="variable"><name>capacity_</name></member>
+    <member refid="classUnorderedSet_1a2e7fdfb99ab4681b5e02dbe0dbe246a4" kind="function"><name>UnorderedSet</name></member>
+    <member refid="classUnorderedSet_1a92181b67e0d6e91b35daa8147dbfae7a" kind="function"><name>~UnorderedSet</name></member>
+    <member refid="classUnorderedSet_1ad624a35d366302017062e8bdb3b2ec9a" kind="function"><name>UnorderedSet</name></member>
+    <member refid="classUnorderedSet_1a1ca0d03e8b880d5867a3e24a3dc8fa44" kind="function"><name>operator=</name></member>
+    <member refid="classUnorderedSet_1a1bfbc66b30740a9122d0a24dad8ed9a5" kind="function"><name>UnorderedSet</name></member>
+    <member refid="classUnorderedSet_1a23c56e9ff17ae7a89d9567a8b76011db" kind="function"><name>operator=</name></member>
+    <member refid="classUnorderedSet_1a01bdce6722d00f07293cca41df2c6572" kind="function"><name>Size</name></member>
+    <member refid="classUnorderedSet_1a99e66ab2e0c768cd3723e5478e03e0ae" kind="function"><name>Contains</name></member>
+    <member refid="classUnorderedSet_1a182bb55db2b81b18e21644ad94d3946f" kind="function"><name>Add</name></member>
+    <member refid="classUnorderedSet_1a2d53efbe43876a54009b62a6b65a999e" kind="function"><name>Remove</name></member>
+    <member refid="classUnorderedSet_1ad397470755ad09ab2ed2c8b72136c6e7" kind="function"><name>Union</name></member>
+    <member refid="classUnorderedSet_1a696780d315f92037865925099019d155" kind="function"><name>Except</name></member>
+    <member refid="classUnorderedSet_1a9a8a80cd912dce1c40db1508a47cc2f9" kind="function"><name>Intersect</name></member>
+    <member refid="classUnorderedSet_1a5c63fff3c9debf6a2a8bcf86d5d4dd6d" kind="function"><name>ToVector</name></member>
+    <member refid="classUnorderedSet_1a37d1a5203e856c1fc812b4f2603b0ad5" kind="function"><name>Clear</name></member>
+    <member refid="classUnorderedSet_1a4320b1b2a062a8c295bf786f522d8627" kind="function"><name>IsEmpty</name></member>
+    <member refid="classUnorderedSet_1a4bb985f5ad956c883f3138448314408e" kind="function"><name>Swap</name></member>
+    <member refid="classUnorderedSet_1a98f0b0545c9f3b117bb7ad945fb0d389" kind="function"><name>Find</name></member>
+    <member refid="classUnorderedSet_1a4e4dc33abfdfb8a610b3db6e251391e6" kind="function"><name>EnsureCapacity</name></member>
+  </compound>
+  <compound refid="dictionary_8h" kind="file"><name>dictionary.h</name>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="unordered__set_8h" kind="file"><name>unordered_set.h</name>
+  </compound>
+</doxygenindex>

@@ -1,0 +1,634 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="classUnorderedSet" kind="class" language="C++" prot="public">
+    <compoundname>UnorderedSet</compoundname>
+    <includes refid="unordered__set_8h" local="no">unordered_set.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classUnorderedSet_1ab2c476247d65e21e660620f21916d83c" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t UnorderedSet&lt; T &gt;::kNotFound</definition>
+        <argsstring></argsstring>
+        <name>kNotFound</name>
+        <qualifiedname>UnorderedSet::kNotFound</qualifiedname>
+        <initializer>= static_cast&lt;std::size_t&gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="159" column="32" bodyfile="unordered_set.h" bodystart="159" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUnorderedSet_1af8e01fe8f94af46ee789e065daefe984" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t UnorderedSet&lt; T &gt;::kInitialCapacity</definition>
+        <argsstring></argsstring>
+        <name>kInitialCapacity</name>
+        <qualifiedname>UnorderedSet::kInitialCapacity</qualifiedname>
+        <initializer>= 4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="160" column="32" bodyfile="unordered_set.h" bodystart="160" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classUnorderedSet_1a0ede5ba7b64bba580f914ea9e20bec8f" prot="private" static="no" mutable="no">
+        <type>T *</type>
+        <definition>T* UnorderedSet&lt; T &gt;::data_</definition>
+        <argsstring></argsstring>
+        <name>data_</name>
+        <qualifiedname>UnorderedSet::data_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="162" column="5" bodyfile="unordered_set.h" bodystart="162" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUnorderedSet_1a43a98f9f9bcfc67387c1152bb816ae79" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t UnorderedSet&lt; T &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>UnorderedSet::size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="163" column="15" bodyfile="unordered_set.h" bodystart="163" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classUnorderedSet_1a47393a243627c5ec7076cc4287596ad8" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t UnorderedSet&lt; T &gt;::capacity_</definition>
+        <argsstring></argsstring>
+        <name>capacity_</name>
+        <qualifiedname>UnorderedSet::capacity_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="164" column="15" bodyfile="unordered_set.h" bodystart="164" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classUnorderedSet_1a2e7fdfb99ab4681b5e02dbe0dbe246a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedSet&lt; T &gt;::UnorderedSet</definition>
+        <argsstring>()</argsstring>
+        <name>UnorderedSet</name>
+        <qualifiedname>UnorderedSet::UnorderedSet</qualifiedname>
+        <briefdescription>
+<para>Конструктор по умолчанию. Создает пустое множество. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="16" column="3" bodyfile="unordered_set.h" bodystart="16" bodyend="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a92181b67e0d6e91b35daa8147dbfae7a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedSet&lt; T &gt;::~UnorderedSet</definition>
+        <argsstring>()</argsstring>
+        <name>~UnorderedSet</name>
+        <qualifiedname>UnorderedSet::~UnorderedSet</qualifiedname>
+        <briefdescription>
+<para>Деструктор. Освобождает выделенную память. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="19" column="3" bodyfile="unordered_set.h" bodystart="19" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1ad624a35d366302017062e8bdb3b2ec9a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedSet&lt; T &gt;::UnorderedSet</definition>
+        <argsstring>(const UnorderedSet &amp;other)</argsstring>
+        <name>UnorderedSet</name>
+        <qualifiedname>UnorderedSet::UnorderedSet</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Копирующий конструктор. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество для копирования.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="23" column="3" bodyfile="unordered_set.h" bodystart="23" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a1ca0d03e8b880d5867a3e24a3dc8fa44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+        <definition>UnorderedSet &amp; UnorderedSet&lt; T &gt;::operator=</definition>
+        <argsstring>(const UnorderedSet &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>UnorderedSet::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Оператор присваивания копированием. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество для копирования.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на текущий объект.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="35" column="16" bodyfile="unordered_set.h" bodystart="35" bodyend="41"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a1bfbc66b30740a9122d0a24dad8ed9a5" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>UnorderedSet&lt; T &gt;::UnorderedSet</definition>
+        <argsstring>(UnorderedSet &amp;&amp;other) noexcept</argsstring>
+        <name>UnorderedSet</name>
+        <qualifiedname>UnorderedSet::UnorderedSet</qualifiedname>
+        <param>
+          <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Перемещающий конструктор. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество для перемещения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="45" column="3" bodyfile="unordered_set.h" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a23c56e9ff17ae7a89d9567a8b76011db" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+        <definition>UnorderedSet &amp; UnorderedSet&lt; T &gt;::operator=</definition>
+        <argsstring>(UnorderedSet &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>UnorderedSet::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Оператор присваивания перемещением. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество для перемещения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на текущий объект.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="55" column="16" bodyfile="unordered_set.h" bodystart="55" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a01bdce6722d00f07293cca41df2c6572" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t UnorderedSet&lt; T &gt;::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <qualifiedname>UnorderedSet::Size</qualifiedname>
+        <briefdescription>
+<para>Возвращает количество элементов в множестве. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество элементов.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="70" column="15" bodyfile="unordered_set.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a99e66ab2e0c768cd3723e5478e03e0ae" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnorderedSet&lt; T &gt;::Contains</definition>
+        <argsstring>(const T &amp;value) const</argsstring>
+        <name>Contains</name>
+        <qualifiedname>UnorderedSet::Contains</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет наличие элемента в множестве. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Элемент для проверки.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если элемент найден, иначе false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="75" column="8" bodyfile="unordered_set.h" bodystart="75" bodyend="77"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a182bb55db2b81b18e21644ad94d3946f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnorderedSet&lt; T &gt;::Add</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>Add</name>
+        <qualifiedname>UnorderedSet::Add</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет элемент в множество. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Элемент для добавления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Если элемент уже существует, добавление не происходит.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="82" column="8" bodyfile="unordered_set.h" bodystart="82" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a2d53efbe43876a54009b62a6b65a999e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnorderedSet&lt; T &gt;::Remove</definition>
+        <argsstring>(const T &amp;value)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>UnorderedSet::Remove</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет элемент из множества. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Элемент для удаления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если элемент был удален, иначе false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="91" column="8" bodyfile="unordered_set.h" bodystart="91" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1ad397470755ad09ab2ed2c8b72136c6e7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref></type>
+        <definition>UnorderedSet UnorderedSet&lt; T &gt;::Union</definition>
+        <argsstring>(const UnorderedSet &amp;other) const</argsstring>
+        <name>Union</name>
+        <qualifiedname>UnorderedSet::Union</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Объединяет текущее множество с другим. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество для объединения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новое множество, содержащее все элементы из обоих множеств.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="106" column="16" bodyfile="unordered_set.h" bodystart="106" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a696780d315f92037865925099019d155" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref></type>
+        <definition>UnorderedSet UnorderedSet&lt; T &gt;::Except</definition>
+        <argsstring>(const UnorderedSet &amp;other) const</argsstring>
+        <name>Except</name>
+        <qualifiedname>UnorderedSet::Except</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет из текущего множества элементы, присутствующие в другом множестве. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество, элементы которого нужно удалить.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новое множество, содержащее только элементы из текущего множества, отсутствующие в other.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="117" column="16" bodyfile="unordered_set.h" bodystart="117" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a9a8a80cd912dce1c40db1508a47cc2f9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref></type>
+        <definition>UnorderedSet UnorderedSet&lt; T &gt;::Intersect</definition>
+        <argsstring>(const UnorderedSet &amp;other) const</argsstring>
+        <name>Intersect</name>
+        <qualifiedname>UnorderedSet::Intersect</qualifiedname>
+        <param>
+          <type>const <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Находит пересечение текущего множества с другим. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество для пересечения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Новое множество, содержащее только общие элементы.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="130" column="16" bodyfile="unordered_set.h" bodystart="130" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a5c63fff3c9debf6a2a8bcf86d5d4dd6d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt; T &gt; UnorderedSet&lt; T &gt;::ToVector</definition>
+        <argsstring>() const</argsstring>
+        <name>ToVector</name>
+        <qualifiedname>UnorderedSet::ToVector</qualifiedname>
+        <briefdescription>
+<para>Преобразует множество в вектор для удобства вывода. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Вектор, содержащий все элементы множества.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="142" column="15" bodyfile="unordered_set.h" bodystart="142" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a37d1a5203e856c1fc812b4f2603b0ad5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnorderedSet&lt; T &gt;::Clear</definition>
+        <argsstring>()</argsstring>
+        <name>Clear</name>
+        <qualifiedname>UnorderedSet::Clear</qualifiedname>
+        <briefdescription>
+<para>Очищает множество, удаляя все элементы. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="147" column="8" bodyfile="unordered_set.h" bodystart="147" bodyend="152"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a4320b1b2a062a8c295bf786f522d8627" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool UnorderedSet&lt; T &gt;::IsEmpty</definition>
+        <argsstring>() const</argsstring>
+        <name>IsEmpty</name>
+        <qualifiedname>UnorderedSet::IsEmpty</qualifiedname>
+        <briefdescription>
+<para>Проверяет, пусто ли множество. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>true, если множество пусто, иначе false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="156" column="8" bodyfile="unordered_set.h" bodystart="156" bodyend="156"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classUnorderedSet_1a4bb985f5ad956c883f3138448314408e" prot="private" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnorderedSet&lt; T &gt;::Swap</definition>
+        <argsstring>(UnorderedSet &amp;other) noexcept</argsstring>
+        <name>Swap</name>
+        <qualifiedname>UnorderedSet::Swap</qualifiedname>
+        <param>
+          <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Обменивает содержимое текущего объекта с другим. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Объект для обмена.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="168" column="8" bodyfile="unordered_set.h" bodystart="168" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a98f0b0545c9f3b117bb7ad945fb0d389" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t UnorderedSet&lt; T &gt;::Find</definition>
+        <argsstring>(const T &amp;value) const</argsstring>
+        <name>Find</name>
+        <qualifiedname>UnorderedSet::Find</qualifiedname>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Находит индекс элемента в массиве. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Элемент для поиска.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Индекс элемента или kNotFound, если элемент не найден.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="177" column="15" bodyfile="unordered_set.h" bodystart="177" bodyend="184"/>
+      </memberdef>
+      <memberdef kind="function" id="classUnorderedSet_1a4e4dc33abfdfb8a610b3db6e251391e6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void UnorderedSet&lt; T &gt;::EnsureCapacity</definition>
+        <argsstring>(std::size_t min_capacity)</argsstring>
+        <name>EnsureCapacity</name>
+        <qualifiedname>UnorderedSet::EnsureCapacity</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>min_capacity</declname>
+        </param>
+        <briefdescription>
+<para>Обеспечивает минимальную емкость массива. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>min_capacity</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Минимальная требуемая емкость.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="unordered_set.h" line="188" column="8" bodyfile="unordered_set.h" bodystart="188" bodyend="202"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс, реализующий функционал неупорядоченного списка с уникальными элементами. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип элементов, хранящихся в множестве.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Доступ к элементам по индексу отсутствует. Дубликаты игнорируются при добавлении.</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>UnorderedSet&lt; T &gt;</label>
+        <link refid="classUnorderedSet"/>
+      </node>
+    </collaborationgraph>
+    <location file="unordered_set.h" line="13" column="1" bodyfile="unordered_set.h" bodystart="13" bodyend="203"/>
+    <listofallmembers>
+      <member refid="classUnorderedSet_1a182bb55db2b81b18e21644ad94d3946f" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Add</name></member>
+      <member refid="classUnorderedSet_1a47393a243627c5ec7076cc4287596ad8" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>capacity_</name></member>
+      <member refid="classUnorderedSet_1a37d1a5203e856c1fc812b4f2603b0ad5" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Clear</name></member>
+      <member refid="classUnorderedSet_1a99e66ab2e0c768cd3723e5478e03e0ae" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Contains</name></member>
+      <member refid="classUnorderedSet_1a0ede5ba7b64bba580f914ea9e20bec8f" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>data_</name></member>
+      <member refid="classUnorderedSet_1a4e4dc33abfdfb8a610b3db6e251391e6" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>EnsureCapacity</name></member>
+      <member refid="classUnorderedSet_1a696780d315f92037865925099019d155" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Except</name></member>
+      <member refid="classUnorderedSet_1a98f0b0545c9f3b117bb7ad945fb0d389" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>Find</name></member>
+      <member refid="classUnorderedSet_1a9a8a80cd912dce1c40db1508a47cc2f9" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Intersect</name></member>
+      <member refid="classUnorderedSet_1a4320b1b2a062a8c295bf786f522d8627" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>IsEmpty</name></member>
+      <member refid="classUnorderedSet_1af8e01fe8f94af46ee789e065daefe984" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>kInitialCapacity</name></member>
+      <member refid="classUnorderedSet_1ab2c476247d65e21e660620f21916d83c" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>kNotFound</name></member>
+      <member refid="classUnorderedSet_1a1ca0d03e8b880d5867a3e24a3dc8fa44" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>operator=</name></member>
+      <member refid="classUnorderedSet_1a23c56e9ff17ae7a89d9567a8b76011db" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>operator=</name></member>
+      <member refid="classUnorderedSet_1a2d53efbe43876a54009b62a6b65a999e" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Remove</name></member>
+      <member refid="classUnorderedSet_1a01bdce6722d00f07293cca41df2c6572" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Size</name></member>
+      <member refid="classUnorderedSet_1a43a98f9f9bcfc67387c1152bb816ae79" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>size_</name></member>
+      <member refid="classUnorderedSet_1a4bb985f5ad956c883f3138448314408e" prot="private" virt="non-virtual"><scope>UnorderedSet</scope><name>Swap</name></member>
+      <member refid="classUnorderedSet_1a5c63fff3c9debf6a2a8bcf86d5d4dd6d" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>ToVector</name></member>
+      <member refid="classUnorderedSet_1ad397470755ad09ab2ed2c8b72136c6e7" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>Union</name></member>
+      <member refid="classUnorderedSet_1a2e7fdfb99ab4681b5e02dbe0dbe246a4" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>UnorderedSet</name></member>
+      <member refid="classUnorderedSet_1ad624a35d366302017062e8bdb3b2ec9a" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>UnorderedSet</name></member>
+      <member refid="classUnorderedSet_1a1bfbc66b30740a9122d0a24dad8ed9a5" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>UnorderedSet</name></member>
+      <member refid="classUnorderedSet_1a92181b67e0d6e91b35daa8147dbfae7a" prot="public" virt="non-virtual"><scope>UnorderedSet</scope><name>~UnorderedSet</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

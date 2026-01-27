@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="classDictionary" kind="class" language="C++" prot="public">
+    <compoundname>Dictionary</compoundname>
+    <includes refid="dictionary_8h" local="no">dictionary.h</includes>
+    <templateparamlist>
+      <param>
+        <type>typename K</type>
+      </param>
+      <param>
+        <type>typename V</type>
+      </param>
+    </templateparamlist>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classDictionary_1a4b3f065d07be6bd799ea00258961d404" prot="private" static="no" mutable="no">
+        <type>K *</type>
+        <definition>K* Dictionary&lt; K, V &gt;::keys_</definition>
+        <argsstring></argsstring>
+        <name>keys_</name>
+        <qualifiedname>Dictionary::keys_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="118" column="5" bodyfile="dictionary.h" bodystart="118" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDictionary_1ae0c7d29c0e002618e976540758858a68" prot="private" static="no" mutable="no">
+        <type>V *</type>
+        <definition>V* Dictionary&lt; K, V &gt;::values_</definition>
+        <argsstring></argsstring>
+        <name>values_</name>
+        <qualifiedname>Dictionary::values_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="119" column="5" bodyfile="dictionary.h" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDictionary_1aa345778676eea9c7396fe7ff4e8ff46e" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t Dictionary&lt; K, V &gt;::size_</definition>
+        <argsstring></argsstring>
+        <name>size_</name>
+        <qualifiedname>Dictionary::size_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="120" column="15" bodyfile="dictionary.h" bodystart="120" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classDictionary_1aa711d9ed53af69797061af762c0137fa" prot="private" static="no" mutable="no">
+        <type>std::size_t</type>
+        <definition>std::size_t Dictionary&lt; K, V &gt;::capacity_</definition>
+        <argsstring></argsstring>
+        <name>capacity_</name>
+        <qualifiedname>Dictionary::capacity_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="121" column="15" bodyfile="dictionary.h" bodystart="121" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classDictionary_1a8d898eaf938d38607a22640680c48f63" prot="private" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr std::size_t</type>
+        <definition>constexpr std::size_t Dictionary&lt; K, V &gt;::npos</definition>
+        <argsstring></argsstring>
+        <name>npos</name>
+        <qualifiedname>Dictionary::npos</qualifiedname>
+        <initializer>= static_cast&lt;std::size_t&gt;(-1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="122" column="32" bodyfile="dictionary.h" bodystart="122" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classDictionary_1a69b86204e013879414d768fee07206ee" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; K, V &gt;::Dictionary</definition>
+        <argsstring>()</argsstring>
+        <name>Dictionary</name>
+        <qualifiedname>Dictionary::Dictionary</qualifiedname>
+        <briefdescription>
+<para>Создаёт пустой словарь. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="14" column="3" bodyfile="dictionary.h" bodystart="14" bodyend="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1aefb78992f7f87b1cf339323654462db8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; K, V &gt;::Dictionary</definition>
+        <argsstring>(const Dictionary &amp;other)</argsstring>
+        <name>Dictionary</name>
+        <qualifiedname>Dictionary::Dictionary</qualifiedname>
+        <param>
+          <type>const <ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Копирующий конструктор. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Словарь для копирования.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="18" column="3" bodyfile="dictionary.h" bodystart="18" bodyend="25"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1ade2208755a19e1d9b0e7241bbdb8ddae" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;</type>
+        <definition>Dictionary &amp; Dictionary&lt; K, V &gt;::operator=</definition>
+        <argsstring>(const Dictionary &amp;other)</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Dictionary::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Оператор присваивания копированием. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Словарь для копирования.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на текущий объект.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="30" column="14" bodyfile="dictionary.h" bodystart="30" bodyend="43"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a73ddcf3c474f4f4580303bcec9ef346b" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; K, V &gt;::Dictionary</definition>
+        <argsstring>(Dictionary &amp;&amp;other) noexcept</argsstring>
+        <name>Dictionary</name>
+        <qualifiedname>Dictionary::Dictionary</qualifiedname>
+        <param>
+          <type><ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Перемещающий конструктор. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Словарь для перемещения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="47" column="3" bodyfile="dictionary.h" bodystart="47" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1abbcb4212033c76125b4b3be72c6f69d8" prot="public" static="no" const="no" explicit="no" inline="yes" noexcept="yes" virt="non-virtual">
+        <type><ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;</type>
+        <definition>Dictionary &amp; Dictionary&lt; K, V &gt;::operator=</definition>
+        <argsstring>(Dictionary &amp;&amp;other) noexcept</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Dictionary::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classDictionary" kindref="compound">Dictionary</ref> &amp;&amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Оператор присваивания перемещением. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Словарь для перемещения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Ссылка на текущий объект.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="56" column="14" bodyfile="dictionary.h" bodystart="56" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1ae37de949fa5cbedd34f21e604fa1edd9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Dictionary&lt; K, V &gt;::~Dictionary</definition>
+        <argsstring>()</argsstring>
+        <name>~Dictionary</name>
+        <qualifiedname>Dictionary::~Dictionary</qualifiedname>
+        <briefdescription>
+<para>Деструктор. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="70" column="3" bodyfile="dictionary.h" bodystart="70" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1aef779cc0f66b75006e0cbdececaeebd9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dictionary&lt; K, V &gt;::ContainsKey</definition>
+        <argsstring>(const K &amp;k) const</argsstring>
+        <name>ContainsKey</name>
+        <qualifiedname>Dictionary::ContainsKey</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Проверяет наличие ключа в словаре. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для поиска.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если ключ найден, иначе false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="75" column="8" bodyfile="dictionary.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1abdd0c6a75e4ebc504e9c0f4a32ef64eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dictionary&lt; K, V &gt;::Add</definition>
+        <argsstring>(const K &amp;k, const V &amp;v)</argsstring>
+        <name>Add</name>
+        <qualifiedname>Dictionary::Add</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>const V &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Добавляет пару ключ-значение в словарь. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для добавления.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>v</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Значение для добавления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+<para>Если ключ уже существует, ничего не происходит.</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="81" column="8" bodyfile="dictionary.h" bodystart="81" bodyend="87"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a322b7a960dd11c61c2c267bc80fcebd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Dictionary&lt; K, V &gt;::Remove</definition>
+        <argsstring>(const K &amp;k)</argsstring>
+        <name>Remove</name>
+        <qualifiedname>Dictionary::Remove</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Удаляет ключ и соответствующее значение из словаря. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для удаления.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true если ключ был удалён, иначе false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="92" column="8" bodyfile="dictionary.h" bodystart="92" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1ab166730797e564bdcbd6f7534c869fbe" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>V</type>
+        <definition>V Dictionary&lt; K, V &gt;::Get</definition>
+        <argsstring>(const K &amp;k) const</argsstring>
+        <name>Get</name>
+        <qualifiedname>Dictionary::Get</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Получает значение по ключу. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для поиска.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Значение, соответствующее ключу.</para>
+</simplesect>
+<parameterlist kind="exception"><parameteritem>
+<parameternamelist>
+<parametername>std::out_of_range</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Выбрасывается, если ключ не найден.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="107" column="5" bodyfile="dictionary.h" bodystart="107" bodyend="111"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1afd34dc5f74f3985ced04fb9e1c26b5ed" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t Dictionary&lt; K, V &gt;::Size</definition>
+        <argsstring>() const</argsstring>
+        <name>Size</name>
+        <qualifiedname>Dictionary::Size</qualifiedname>
+        <briefdescription>
+<para>Возвращает количество пар ключ-значение в словаре. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Количество пар.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="115" column="15" bodyfile="dictionary.h" bodystart="115" bodyend="115"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classDictionary_1ad261e546de1766b5d4bb0f02b1c8fde1" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Dictionary&lt; K, V &gt;::EnsureCapacity</definition>
+        <argsstring>(std::size_t mincap)</argsstring>
+        <name>EnsureCapacity</name>
+        <qualifiedname>Dictionary::EnsureCapacity</qualifiedname>
+        <param>
+          <type>std::size_t</type>
+          <declname>mincap</declname>
+        </param>
+        <briefdescription>
+<para>Увеличивает вместимость внутренних массивов при необходимости. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>mincap</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Минимальная требуемая вместимость.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="126" column="8" bodyfile="dictionary.h" bodystart="126" bodyend="140"/>
+      </memberdef>
+      <memberdef kind="function" id="classDictionary_1a085bbe16b6ee74bcd69de5ba3fd615cc" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::size_t</type>
+        <definition>std::size_t Dictionary&lt; K, V &gt;::IndexOf</definition>
+        <argsstring>(const K &amp;k) const</argsstring>
+        <name>IndexOf</name>
+        <qualifiedname>Dictionary::IndexOf</qualifiedname>
+        <param>
+          <type>const K &amp;</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+<para>Находит индекс ключа в массиве. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>k</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Ключ для поиска.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Индекс ключа или npos, если ключ не найден.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="dictionary.h" line="145" column="15" bodyfile="dictionary.h" bodystart="145" bodyend="149"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Простейший словарь ключ-значение на основе двух массивов. </para>
+    </briefdescription>
+    <detaileddescription>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>K</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип ключа.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>V</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Тип значения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Dictionary&lt; K, V &gt;</label>
+        <link refid="classDictionary"/>
+      </node>
+    </collaborationgraph>
+    <location file="dictionary.h" line="11" column="1" bodyfile="dictionary.h" bodystart="11" bodyend="150"/>
+    <listofallmembers>
+      <member refid="classDictionary_1abdd0c6a75e4ebc504e9c0f4a32ef64eb" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Add</name></member>
+      <member refid="classDictionary_1aa711d9ed53af69797061af762c0137fa" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>capacity_</name></member>
+      <member refid="classDictionary_1aef779cc0f66b75006e0cbdececaeebd9" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>ContainsKey</name></member>
+      <member refid="classDictionary_1a69b86204e013879414d768fee07206ee" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Dictionary</name></member>
+      <member refid="classDictionary_1aefb78992f7f87b1cf339323654462db8" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Dictionary</name></member>
+      <member refid="classDictionary_1a73ddcf3c474f4f4580303bcec9ef346b" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Dictionary</name></member>
+      <member refid="classDictionary_1ad261e546de1766b5d4bb0f02b1c8fde1" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>EnsureCapacity</name></member>
+      <member refid="classDictionary_1ab166730797e564bdcbd6f7534c869fbe" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Get</name></member>
+      <member refid="classDictionary_1a085bbe16b6ee74bcd69de5ba3fd615cc" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>IndexOf</name></member>
+      <member refid="classDictionary_1a4b3f065d07be6bd799ea00258961d404" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>keys_</name></member>
+      <member refid="classDictionary_1a8d898eaf938d38607a22640680c48f63" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>npos</name></member>
+      <member refid="classDictionary_1ade2208755a19e1d9b0e7241bbdb8ddae" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>operator=</name></member>
+      <member refid="classDictionary_1abbcb4212033c76125b4b3be72c6f69d8" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>operator=</name></member>
+      <member refid="classDictionary_1a322b7a960dd11c61c2c267bc80fcebd7" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Remove</name></member>
+      <member refid="classDictionary_1afd34dc5f74f3985ced04fb9e1c26b5ed" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>Size</name></member>
+      <member refid="classDictionary_1aa345778676eea9c7396fe7ff4e8ff46e" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>size_</name></member>
+      <member refid="classDictionary_1ae0c7d29c0e002618e976540758858a68" prot="private" virt="non-virtual"><scope>Dictionary</scope><name>values_</name></member>
+      <member refid="classDictionary_1ae37de949fa5cbedd34f21e604fa1edd9" prot="public" virt="non-virtual"><scope>Dictionary</scope><name>~Dictionary</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

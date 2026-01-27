@@ -1,0 +1,324 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="ru">
+  <compounddef id="classBookAnalyzer" kind="class" language="C++" prot="public">
+    <compoundname>BookAnalyzer</compoundname>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classBookAnalyzer_1a8aa148f07c116994f28837b65fb4ca0c" prot="private" static="no" mutable="no">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt;</type>
+        <definition>UnorderedSet&lt;std::string&gt; BookAnalyzer::all_books_</definition>
+        <argsstring></argsstring>
+        <name>all_books_</name>
+        <qualifiedname>BookAnalyzer::all_books_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="125" column="16" bodyfile="main.cpp" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBookAnalyzer_1ad2f7d36b5fc4919bec3bf83ab18cb127" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt; &gt;</type>
+        <definition>std::vector&lt;UnorderedSet&lt;std::string&gt; &gt; BookAnalyzer::readers_books_</definition>
+        <argsstring></argsstring>
+        <name>readers_books_</name>
+        <qualifiedname>BookAnalyzer::readers_books_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="126" column="15" bodyfile="main.cpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBookAnalyzer_1a43ce678ce85b340721960427cda803ad" prot="private" static="no" mutable="no">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt;</type>
+        <definition>UnorderedSet&lt;std::string&gt; BookAnalyzer::books_read_by_all_</definition>
+        <argsstring></argsstring>
+        <name>books_read_by_all_</name>
+        <qualifiedname>BookAnalyzer::books_read_by_all_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="127" column="16" bodyfile="main.cpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBookAnalyzer_1a96cc99f8459934eba5db62961c4bcd9f" prot="private" static="no" mutable="no">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt;</type>
+        <definition>UnorderedSet&lt;std::string&gt; BookAnalyzer::books_read_by_some_</definition>
+        <argsstring></argsstring>
+        <name>books_read_by_some_</name>
+        <qualifiedname>BookAnalyzer::books_read_by_some_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="128" column="16" bodyfile="main.cpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBookAnalyzer_1ab9144fa379c86def47be0506261f406b" prot="private" static="no" mutable="no">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt;</type>
+        <definition>UnorderedSet&lt;std::string&gt; BookAnalyzer::books_read_by_none_</definition>
+        <argsstring></argsstring>
+        <name>books_read_by_none_</name>
+        <qualifiedname>BookAnalyzer::books_read_by_none_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="129" column="16" bodyfile="main.cpp" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classBookAnalyzer_1aa04a2191f65c0202abbad1108e23b99a" prot="private" static="no" mutable="no">
+        <type><ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt;</type>
+        <definition>UnorderedSet&lt;std::string&gt; BookAnalyzer::books_read_by_someone_</definition>
+        <argsstring></argsstring>
+        <name>books_read_by_someone_</name>
+        <qualifiedname>BookAnalyzer::books_read_by_someone_</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="130" column="16" bodyfile="main.cpp" bodystart="130" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="classBookAnalyzer_1a061677fe028aeb54eaa89232b474108a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BookAnalyzer::ReadData</definition>
+        <argsstring>(const std::string &amp;filename)</argsstring>
+        <name>ReadData</name>
+        <qualifiedname>BookAnalyzer::ReadData</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Читает данные из файла и заполняет внутренние структуры. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя файла с данными.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true, если данные успешно прочитаны, иначе false.</para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="19" column="8" bodyfile="main.cpp" bodystart="19" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classBookAnalyzer_1a35f42956b24320dd9730d0b17d9f9a60" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookAnalyzer::Analyze</definition>
+        <argsstring>()</argsstring>
+        <name>Analyze</name>
+        <qualifiedname>BookAnalyzer::Analyze</qualifiedname>
+        <briefdescription>
+<para>Выполняет анализ прочитанных книг. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Определяет три категории книг:<orderedlist>
+<listitem><para>Книги, прочитанные всеми читателями</para>
+</listitem><listitem><para>Книги, прочитанные некоторыми читателями (но не всеми)</para>
+</listitem><listitem><para>Книги, которые никто не прочитал </para>
+</listitem></orderedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="66" column="8" bodyfile="main.cpp" bodystart="66" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="classBookAnalyzer_1a311a602dfb4237a4aae305e1cbf519e2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookAnalyzer::PrintResults</definition>
+        <argsstring>() const</argsstring>
+        <name>PrintResults</name>
+        <qualifiedname>BookAnalyzer::PrintResults</qualifiedname>
+        <briefdescription>
+<para>Выводит результаты анализа в консоль. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="92" column="8" bodyfile="main.cpp" bodystart="92" bodyend="100"/>
+      </memberdef>
+      <memberdef kind="function" id="classBookAnalyzer_1a3e75161688f37870a35bd0d3a47f3c75" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookAnalyzer::SaveResults</definition>
+        <argsstring>(const std::string &amp;filename) const</argsstring>
+        <name>SaveResults</name>
+        <qualifiedname>BookAnalyzer::SaveResults</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <briefdescription>
+<para>Сохраняет результаты анализа в файл. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>filename</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Имя файла для сохранения результатов.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="104" column="8" bodyfile="main.cpp" bodystart="104" bodyend="122"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="classBookAnalyzer_1a2fa4bf64890ae374dd9f27c073a88e46" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookAnalyzer::PrintSet</definition>
+        <argsstring>(const std::string &amp;title, const UnorderedSet&lt; std::string &gt; &amp;set) const</argsstring>
+        <name>PrintSet</name>
+        <qualifiedname>BookAnalyzer::PrintSet</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt; &amp;</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+<para>Выводит множество книг с заголовком в консоль. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок для вывода.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество книг для вывода.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="135" column="8" bodyfile="main.cpp" bodystart="135" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="classBookAnalyzer_1ae184e1f3c6b4ba212eb2f10dabe939a6" prot="private" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void BookAnalyzer::SaveSetToFile</definition>
+        <argsstring>(std::ofstream &amp;file, const std::string &amp;title, const UnorderedSet&lt; std::string &gt; &amp;set) const</argsstring>
+        <name>SaveSetToFile</name>
+        <qualifiedname>BookAnalyzer::SaveSetToFile</qualifiedname>
+        <param>
+          <type>std::ofstream &amp;</type>
+          <declname>file</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>title</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref>&lt; std::string &gt; &amp;</type>
+          <declname>set</declname>
+        </param>
+        <briefdescription>
+<para>Сохраняет множество книг с заголовком в файл. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>file</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Файловый поток для записи.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>title</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Заголовок для сохранения.</para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>set</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Множество книг для сохранения.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="main.cpp" line="154" column="8" bodyfile="main.cpp" bodystart="154" bodyend="168"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>Класс для анализа прочитанных книг читателями. </para>
+    </briefdescription>
+    <detaileddescription>
+<para>Использует класс <ref refid="classUnorderedSet" kindref="compound">UnorderedSet</ref> для хранения книг и выполнения операций над множествами. Определяет три категории книг: прочитанные всеми, прочитанные некоторыми, не прочитанные никем. </para>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>BookAnalyzer</label>
+        <link refid="classBookAnalyzer"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>-all_books_</edgelabel>
+          <edgelabel>-books_read_by_all_</edgelabel>
+          <edgelabel>-books_read_by_none_</edgelabel>
+          <edgelabel>-books_read_by_some_</edgelabel>
+          <edgelabel>-books_read_by_someone_</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>UnorderedSet&lt; std::string &gt;</label>
+        <link refid="classUnorderedSet"/>
+      </node>
+    </collaborationgraph>
+    <location file="main.cpp" line="14" column="1" bodyfile="main.cpp" bodystart="14" bodyend="169"/>
+    <listofallmembers>
+      <member refid="classBookAnalyzer_1a8aa148f07c116994f28837b65fb4ca0c" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>all_books_</name></member>
+      <member refid="classBookAnalyzer_1a35f42956b24320dd9730d0b17d9f9a60" prot="public" virt="non-virtual"><scope>BookAnalyzer</scope><name>Analyze</name></member>
+      <member refid="classBookAnalyzer_1a43ce678ce85b340721960427cda803ad" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>books_read_by_all_</name></member>
+      <member refid="classBookAnalyzer_1ab9144fa379c86def47be0506261f406b" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>books_read_by_none_</name></member>
+      <member refid="classBookAnalyzer_1a96cc99f8459934eba5db62961c4bcd9f" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>books_read_by_some_</name></member>
+      <member refid="classBookAnalyzer_1aa04a2191f65c0202abbad1108e23b99a" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>books_read_by_someone_</name></member>
+      <member refid="classBookAnalyzer_1a311a602dfb4237a4aae305e1cbf519e2" prot="public" virt="non-virtual"><scope>BookAnalyzer</scope><name>PrintResults</name></member>
+      <member refid="classBookAnalyzer_1a2fa4bf64890ae374dd9f27c073a88e46" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>PrintSet</name></member>
+      <member refid="classBookAnalyzer_1a061677fe028aeb54eaa89232b474108a" prot="public" virt="non-virtual"><scope>BookAnalyzer</scope><name>ReadData</name></member>
+      <member refid="classBookAnalyzer_1ad2f7d36b5fc4919bec3bf83ab18cb127" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>readers_books_</name></member>
+      <member refid="classBookAnalyzer_1a3e75161688f37870a35bd0d3a47f3c75" prot="public" virt="non-virtual"><scope>BookAnalyzer</scope><name>SaveResults</name></member>
+      <member refid="classBookAnalyzer_1ae184e1f3c6b4ba212eb2f10dabe939a6" prot="private" virt="non-virtual"><scope>BookAnalyzer</scope><name>SaveSetToFile</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

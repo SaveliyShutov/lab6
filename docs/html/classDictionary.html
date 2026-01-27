@@ -1,0 +1,770 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа 6: Шаблон класса Dictionary&lt; K, V &gt;</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr id="projectrow">
+  <td id="projectalign">
+   <div id="projectname">Лабораторная работа 6<span id="projectnumber">&#160;1.0</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Загрузка...</div>
+<div class="SRStatus" id="Searching">Поиск...</div>
+<div class="SRStatus" id="NoMatches">Не найдено</div>
+</div>
+</div>
+</div>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Открытые члены</a> &#124;
+<a href="#pri-methods">Закрытые члены</a> &#124;
+<a href="#pri-attribs">Закрытые данные</a> &#124;
+<a href="#pri-static-attribs">Закрытые статические данные</a> &#124;
+<a href="classDictionary-members.html">Полный список членов класса</a>  </div>
+  <div class="headertitle"><div class="title">Шаблон класса Dictionary&lt; K, V &gt;</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Простейший словарь ключ-значение на основе двух массивов.  
+ <a href="classDictionary.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="dictionary_8h_source.html">dictionary.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса Dictionary&lt; K, V &gt;:</div>
+<div class="dyncontent">
+<div class="center"><img src="classDictionary__coll__graph.png" border="0" usemap="#aDictionary_3_01K_00_01V_01_4_coll__map" alt="Collaboration graph"/></div>
+<map name="aDictionary_3_01K_00_01V_01_4_coll__map" id="aDictionary_3_01K_00_01V_01_4_coll__map">
+<area shape="rect" title="Простейший словарь ключ&#45;значение на основе двух массивов." alt="" coords="5,5,145,391"/>
+</map>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Открытые члены</h2></td></tr>
+<tr class="memitem:a69b86204e013879414d768fee07206ee" id="r_a69b86204e013879414d768fee07206ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a69b86204e013879414d768fee07206ee">Dictionary</a> ()</td></tr>
+<tr class="memdesc:a69b86204e013879414d768fee07206ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Создаёт пустой словарь.  <br /></td></tr>
+<tr class="separator:a69b86204e013879414d768fee07206ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aefb78992f7f87b1cf339323654462db8" id="r_aefb78992f7f87b1cf339323654462db8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#aefb78992f7f87b1cf339323654462db8">Dictionary</a> (const <a class="el" href="classDictionary.html">Dictionary</a> &amp;other)</td></tr>
+<tr class="memdesc:aefb78992f7f87b1cf339323654462db8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Копирующий конструктор.  <br /></td></tr>
+<tr class="separator:aefb78992f7f87b1cf339323654462db8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade2208755a19e1d9b0e7241bbdb8ddae" id="r_ade2208755a19e1d9b0e7241bbdb8ddae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDictionary.html">Dictionary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#ade2208755a19e1d9b0e7241bbdb8ddae">operator=</a> (const <a class="el" href="classDictionary.html">Dictionary</a> &amp;other)</td></tr>
+<tr class="memdesc:ade2208755a19e1d9b0e7241bbdb8ddae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания копированием.  <br /></td></tr>
+<tr class="separator:ade2208755a19e1d9b0e7241bbdb8ddae"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a73ddcf3c474f4f4580303bcec9ef346b" id="r_a73ddcf3c474f4f4580303bcec9ef346b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a73ddcf3c474f4f4580303bcec9ef346b">Dictionary</a> (<a class="el" href="classDictionary.html">Dictionary</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:a73ddcf3c474f4f4580303bcec9ef346b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Перемещающий конструктор.  <br /></td></tr>
+<tr class="separator:a73ddcf3c474f4f4580303bcec9ef346b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbcb4212033c76125b4b3be72c6f69d8" id="r_abbcb4212033c76125b4b3be72c6f69d8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classDictionary.html">Dictionary</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#abbcb4212033c76125b4b3be72c6f69d8">operator=</a> (<a class="el" href="classDictionary.html">Dictionary</a> &amp;&amp;other) noexcept</td></tr>
+<tr class="memdesc:abbcb4212033c76125b4b3be72c6f69d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Оператор присваивания перемещением.  <br /></td></tr>
+<tr class="separator:abbcb4212033c76125b4b3be72c6f69d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae37de949fa5cbedd34f21e604fa1edd9" id="r_ae37de949fa5cbedd34f21e604fa1edd9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#ae37de949fa5cbedd34f21e604fa1edd9">~Dictionary</a> ()</td></tr>
+<tr class="memdesc:ae37de949fa5cbedd34f21e604fa1edd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор.  <br /></td></tr>
+<tr class="separator:ae37de949fa5cbedd34f21e604fa1edd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef779cc0f66b75006e0cbdececaeebd9" id="r_aef779cc0f66b75006e0cbdececaeebd9"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#aef779cc0f66b75006e0cbdececaeebd9">ContainsKey</a> (const K &amp;k) const</td></tr>
+<tr class="memdesc:aef779cc0f66b75006e0cbdececaeebd9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Проверяет наличие ключа в словаре.  <br /></td></tr>
+<tr class="separator:aef779cc0f66b75006e0cbdececaeebd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdd0c6a75e4ebc504e9c0f4a32ef64eb" id="r_abdd0c6a75e4ebc504e9c0f4a32ef64eb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#abdd0c6a75e4ebc504e9c0f4a32ef64eb">Add</a> (const K &amp;k, const V &amp;v)</td></tr>
+<tr class="memdesc:abdd0c6a75e4ebc504e9c0f4a32ef64eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Добавляет пару ключ-значение в словарь.  <br /></td></tr>
+<tr class="separator:abdd0c6a75e4ebc504e9c0f4a32ef64eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a322b7a960dd11c61c2c267bc80fcebd7" id="r_a322b7a960dd11c61c2c267bc80fcebd7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a322b7a960dd11c61c2c267bc80fcebd7">Remove</a> (const K &amp;k)</td></tr>
+<tr class="memdesc:a322b7a960dd11c61c2c267bc80fcebd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Удаляет ключ и соответствующее значение из словаря.  <br /></td></tr>
+<tr class="separator:a322b7a960dd11c61c2c267bc80fcebd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab166730797e564bdcbd6f7534c869fbe" id="r_ab166730797e564bdcbd6f7534c869fbe"><td class="memItemLeft" align="right" valign="top">V&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#ab166730797e564bdcbd6f7534c869fbe">Get</a> (const K &amp;k) const</td></tr>
+<tr class="memdesc:ab166730797e564bdcbd6f7534c869fbe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Получает значение по ключу.  <br /></td></tr>
+<tr class="separator:ab166730797e564bdcbd6f7534c869fbe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afd34dc5f74f3985ced04fb9e1c26b5ed" id="r_afd34dc5f74f3985ced04fb9e1c26b5ed"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#afd34dc5f74f3985ced04fb9e1c26b5ed">Size</a> () const</td></tr>
+<tr class="memdesc:afd34dc5f74f3985ced04fb9e1c26b5ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Возвращает количество пар ключ-значение в словаре.  <br /></td></tr>
+<tr class="separator:afd34dc5f74f3985ced04fb9e1c26b5ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Закрытые члены</h2></td></tr>
+<tr class="memitem:ad261e546de1766b5d4bb0f02b1c8fde1" id="r_ad261e546de1766b5d4bb0f02b1c8fde1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#ad261e546de1766b5d4bb0f02b1c8fde1">EnsureCapacity</a> (std::size_t mincap)</td></tr>
+<tr class="memdesc:ad261e546de1766b5d4bb0f02b1c8fde1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Увеличивает вместимость внутренних массивов при необходимости.  <br /></td></tr>
+<tr class="separator:ad261e546de1766b5d4bb0f02b1c8fde1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a085bbe16b6ee74bcd69de5ba3fd615cc" id="r_a085bbe16b6ee74bcd69de5ba3fd615cc"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a085bbe16b6ee74bcd69de5ba3fd615cc">IndexOf</a> (const K &amp;k) const</td></tr>
+<tr class="memdesc:a085bbe16b6ee74bcd69de5ba3fd615cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Находит индекс ключа в массиве.  <br /></td></tr>
+<tr class="separator:a085bbe16b6ee74bcd69de5ba3fd615cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Закрытые данные</h2></td></tr>
+<tr class="memitem:a4b3f065d07be6bd799ea00258961d404" id="r_a4b3f065d07be6bd799ea00258961d404"><td class="memItemLeft" align="right" valign="top">K *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a4b3f065d07be6bd799ea00258961d404">keys_</a></td></tr>
+<tr class="separator:a4b3f065d07be6bd799ea00258961d404"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0c7d29c0e002618e976540758858a68" id="r_ae0c7d29c0e002618e976540758858a68"><td class="memItemLeft" align="right" valign="top">V *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#ae0c7d29c0e002618e976540758858a68">values_</a></td></tr>
+<tr class="separator:ae0c7d29c0e002618e976540758858a68"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa345778676eea9c7396fe7ff4e8ff46e" id="r_aa345778676eea9c7396fe7ff4e8ff46e"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#aa345778676eea9c7396fe7ff4e8ff46e">size_</a></td></tr>
+<tr class="separator:aa345778676eea9c7396fe7ff4e8ff46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa711d9ed53af69797061af762c0137fa" id="r_aa711d9ed53af69797061af762c0137fa"><td class="memItemLeft" align="right" valign="top">std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#aa711d9ed53af69797061af762c0137fa">capacity_</a></td></tr>
+<tr class="separator:aa711d9ed53af69797061af762c0137fa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-static-attribs" name="pri-static-attribs"></a>
+Закрытые статические данные</h2></td></tr>
+<tr class="memitem:a8d898eaf938d38607a22640680c48f63" id="r_a8d898eaf938d38607a22640680c48f63"><td class="memItemLeft" align="right" valign="top">static constexpr std::size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classDictionary.html#a8d898eaf938d38607a22640680c48f63">npos</a> = static_cast&lt;std::size_t&gt;(-1)</td></tr>
+<tr class="separator:a8d898eaf938d38607a22640680c48f63"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><div class="compoundTemplParams">template&lt;typename K, typename V&gt;<br />
+class Dictionary&lt; K, V &gt;</div><p>Простейший словарь ключ-значение на основе двух массивов. </p>
+<dl class="tparams"><dt>Параметры шаблона</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">K</td><td>Тип ключа.</td></tr>
+    <tr><td class="paramname">V</td><td>Тип значения.</td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Конструктор(ы)</h2>
+<a id="a69b86204e013879414d768fee07206ee" name="a69b86204e013879414d768fee07206ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a69b86204e013879414d768fee07206ee">&#9670;&#160;</a></span>Dictionary() <span class="overload">[1/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;<a class="el" href="classDictionary.html">::Dictionary</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Создаёт пустой словарь. </p>
+
+</div>
+</div>
+<a id="aefb78992f7f87b1cf339323654462db8" name="aefb78992f7f87b1cf339323654462db8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aefb78992f7f87b1cf339323654462db8">&#9670;&#160;</a></span>Dictionary() <span class="overload">[2/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;<a class="el" href="classDictionary.html">::Dictionary</a> </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Копирующий конструктор. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Словарь для копирования.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a73ddcf3c474f4f4580303bcec9ef346b" name="a73ddcf3c474f4f4580303bcec9ef346b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a73ddcf3c474f4f4580303bcec9ef346b">&#9670;&#160;</a></span>Dictionary() <span class="overload">[3/3]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;<a class="el" href="classDictionary.html">::Dictionary</a> </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Перемещающий конструктор. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Словарь для перемещения.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ae37de949fa5cbedd34f21e604fa1edd9" name="ae37de949fa5cbedd34f21e604fa1edd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae37de949fa5cbedd34f21e604fa1edd9">&#9670;&#160;</a></span>~Dictionary()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::~<a class="el" href="classDictionary.html">Dictionary</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Деструктор. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Методы</h2>
+<a id="abdd0c6a75e4ebc504e9c0f4a32ef64eb" name="abdd0c6a75e4ebc504e9c0f4a32ef64eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdd0c6a75e4ebc504e9c0f4a32ef64eb">&#9670;&#160;</a></span>Add()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::Add </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>k</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const V &amp;&#160;</td>
+          <td class="paramname"><em>v</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Добавляет пару ключ-значение в словарь. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Ключ для добавления.</td></tr>
+    <tr><td class="paramname">v</td><td>Значение для добавления.</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Если ключ уже существует, ничего не происходит.</p>
+
+</div>
+</div>
+<a id="aef779cc0f66b75006e0cbdececaeebd9" name="aef779cc0f66b75006e0cbdececaeebd9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef779cc0f66b75006e0cbdececaeebd9">&#9670;&#160;</a></span>ContainsKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::ContainsKey </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Проверяет наличие ключа в словаре. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Ключ для поиска.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если ключ найден, иначе false.</dd></dl>
+
+</div>
+</div>
+<a id="ad261e546de1766b5d4bb0f02b1c8fde1" name="ad261e546de1766b5d4bb0f02b1c8fde1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad261e546de1766b5d4bb0f02b1c8fde1">&#9670;&#160;</a></span>EnsureCapacity()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::EnsureCapacity </td>
+          <td>(</td>
+          <td class="paramtype">std::size_t&#160;</td>
+          <td class="paramname"><em>mincap</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Увеличивает вместимость внутренних массивов при необходимости. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">mincap</td><td>Минимальная требуемая вместимость.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="ab166730797e564bdcbd6f7534c869fbe" name="ab166730797e564bdcbd6f7534c869fbe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab166730797e564bdcbd6f7534c869fbe">&#9670;&#160;</a></span>Get()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::Get </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Получает значение по ключу. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Ключ для поиска.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Значение, соответствующее ключу.</dd></dl>
+<dl class="exception"><dt>Исключения</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::out_of_range</td><td>Выбрасывается, если ключ не найден.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a085bbe16b6ee74bcd69de5ba3fd615cc" name="a085bbe16b6ee74bcd69de5ba3fd615cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a085bbe16b6ee74bcd69de5ba3fd615cc">&#9670;&#160;</a></span>IndexOf()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::IndexOf </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Находит индекс ключа в массиве. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Ключ для поиска.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Индекс ключа или npos, если ключ не найден.</dd></dl>
+
+</div>
+</div>
+<a id="ade2208755a19e1d9b0e7241bbdb8ddae" name="ade2208755a19e1d9b0e7241bbdb8ddae"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade2208755a19e1d9b0e7241bbdb8ddae">&#9670;&#160;</a></span>operator=() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDictionary.html">Dictionary</a> &amp; <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt; &amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор присваивания копированием. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Словарь для копирования.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на текущий объект.</dd></dl>
+
+</div>
+</div>
+<a id="abbcb4212033c76125b4b3be72c6f69d8" name="abbcb4212033c76125b4b3be72c6f69d8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abbcb4212033c76125b4b3be72c6f69d8">&#9670;&#160;</a></span>operator=() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classDictionary.html">Dictionary</a> &amp; <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::operator= </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt; &amp;&amp;&#160;</td>
+          <td class="paramname"><em>other</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">noexcept</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Оператор присваивания перемещением. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">other</td><td>Словарь для перемещения.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>Ссылка на текущий объект.</dd></dl>
+
+</div>
+</div>
+<a id="a322b7a960dd11c61c2c267bc80fcebd7" name="a322b7a960dd11c61c2c267bc80fcebd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a322b7a960dd11c61c2c267bc80fcebd7">&#9670;&#160;</a></span>Remove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::Remove </td>
+          <td>(</td>
+          <td class="paramtype">const K &amp;&#160;</td>
+          <td class="paramname"><em>k</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Удаляет ключ и соответствующее значение из словаря. </p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">k</td><td>Ключ для удаления.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>true если ключ был удалён, иначе false.</dd></dl>
+
+</div>
+</div>
+<a id="afd34dc5f74f3985ced04fb9e1c26b5ed" name="afd34dc5f74f3985ced04fb9e1c26b5ed"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afd34dc5f74f3985ced04fb9e1c26b5ed">&#9670;&#160;</a></span>Size()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::Size </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Возвращает количество пар ключ-значение в словаре. </p>
+<dl class="section return"><dt>Возвращает</dt><dd>Количество пар.</dd></dl>
+
+</div>
+</div>
+<h2 class="groupheader">Данные класса</h2>
+<a id="aa711d9ed53af69797061af762c0137fa" name="aa711d9ed53af69797061af762c0137fa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa711d9ed53af69797061af762c0137fa">&#9670;&#160;</a></span>capacity_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::capacity_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a4b3f065d07be6bd799ea00258961d404" name="a4b3f065d07be6bd799ea00258961d404"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4b3f065d07be6bd799ea00258961d404">&#9670;&#160;</a></span>keys_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">K* <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::keys_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a8d898eaf938d38607a22640680c48f63" name="a8d898eaf938d38607a22640680c48f63"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d898eaf938d38607a22640680c48f63">&#9670;&#160;</a></span>npos</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">constexpr std::size_t <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::npos = static_cast&lt;std::size_t&gt;(-1)</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">constexpr</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="aa345778676eea9c7396fe7ff4e8ff46e" name="aa345778676eea9c7396fe7ff4e8ff46e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa345778676eea9c7396fe7ff4e8ff46e">&#9670;&#160;</a></span>size_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::size_t <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::size_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="ae0c7d29c0e002618e976540758858a68" name="ae0c7d29c0e002618e976540758858a68"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0c7d29c0e002618e976540758858a68">&#9670;&#160;</a></span>values_</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename K , typename V &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">V* <a class="el" href="classDictionary.html">Dictionary</a>&lt; K, V &gt;::values_</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<hr/>Объявления и описания членов класса находятся в файле:<ul>
+<li><a class="el" href="dictionary_8h_source.html">dictionary.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.8
+</small></address>
+</body>
+</html>
