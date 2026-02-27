@@ -4,8 +4,6 @@
 #include <new>
 #include <string>
 
-// Реализация методов шаблона Dictionary<K,V>
-
 template <typename K, typename V>
 Dictionary<K,V>::Dictionary()
   : data_(nullptr), size_(0), capacity_(0) {}
